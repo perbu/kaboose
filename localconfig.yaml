@@ -1,0 +1,8 @@
+repoBaseDir: "~/git/celerway"
+subClusters:
+  admin-portal:
+    path: "~/git/perbu/kaboose"
+  nimbus:
+    path: "~/git/perbu/kaboose"
+  mqtt:
+    path: "~/git/perbu/kaboose"
