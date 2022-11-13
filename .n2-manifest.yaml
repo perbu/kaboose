@@ -1,0 +1,76 @@
+config:
+  workingDir: ./deps
+  valuesFormat: kustiomization
+  valuesPath: ./yaml/base/kustomization.yaml
+  dockerRepoPrefix: eu.gcr.io/nimbus2-199322
+  buildSecrets:
+    - repo: n2-api
+      argName: NPM_TOKEN
+      secretName: npmrc-github-token-perbu
+    - repo: n2-state-notifier
+      argName: NPM_TOKEN
+      secretName: npmrc-github-token-perbu
+    - repo: n2-report-mail
+      argName: NPM_TOKEN
+      secretName: npmrc-github-token-perbu
+repositories:
+  - name: n2-api
+    url: git@github.com:Celerway/n2-api
+    branch: master
+  - name: n2-app
+    url: git@github.com:Celerway/n2-app
+    branch: master
+  - name: n2-background-worker
+    url: git@github.com:Celerway/n2-background-worker
+    branch: master
+  - name: n2-metadata-importer
+    url: git@github.com:Celerway/n2-metadata-importer
+    branch: master
+  - name: n2-redis
+    url: git@github.com:Celerway/n2-redis
+    branch: master
+  - name: n2-report-mail
+    url: git@github.com:Celerway/n2-report-mail
+    branch: master
+  - name: n2-router-api
+    url: git@github.com:Celerway/n2-router-api
+    branch: master
+  - name: n2-sshd
+    url: git@github.com:Celerway/n2-sshd
+    branch: master
+  - name: n2-state-notifier
+    url: git@github.com:Celerway/n2-state-notifier
+    branch: master
+  - name: n2-statistics-container
+    url: git@github.com:Celerway/n2-statistics-container
+    branch: master
+  - name: n2-nimbus-docs
+    url: git@github.com:Celerway/n2-nimbus-docs
+    branch: master
+  - name: n2-sshd-init-ca
+    url: git@github.com:Celerway/n2-sshd-init-ca
+    branch: main
+  - name: n2-mqtt-init-ca
+    url: git@github.com:Celerway/n2-mqtt-init-ca
+    branch: main
+  - name: n2-certbot
+    url: git@github.com:Celerway/n2-certbot
+    branch: master
+  - name: n2-ca
+    url: git@github.com:Celerway/n2-ca
+    branch: main
+  - name: n2-metadata
+    url: git@github.com:Celerway/n2-metadata
+    branch: main
+  - name: n2-rssh
+    url: git@github.com:Celerway/n2-rssh
+    branch: main
+  - name: n2-legacy-kafka-importer
+    url: git@github.com:Celerway/n2-legacy-kafka-importer
+    branch: main
+  - name: n2-mqtt-outbound-api
+    url: git@github.com:Celerway/n2-mqtt-outbound-api
+    branch: main
+  - name: n2-router-messages
+    url: git@github.com:Celerway/n2-router-messages
+    branch: main
