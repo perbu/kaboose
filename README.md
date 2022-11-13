@@ -2,5 +2,7 @@
 
 Semi-intelligent k8s yaml processor used for updating k8s manifests whenever things happen in git and container repo.
 
+## This is a work in progress. Not ready for any use.
+
 ## Usage
- - Check out the folder with the yaml files you want to process
+lol.
